@@ -584,3 +584,11 @@ footer {
     margin-bottom: 20px;
   }
 }
+
+.feature,
+.step,
+.use-case,
+.plan,
+.faq-item {
+  will-change: transform, opacity;
+}

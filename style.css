@@ -110,13 +110,6 @@ header.scrolled {
     display: flex;
   }
 }
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  display: flex;
-  gap: 1rem;
-  align-items: center;
-}
 
 .cta-button {
   background-color: #ff9966;
@@ -276,10 +269,12 @@ input[type="text"] {
   border: none;
   border-radius: 5px;
 }
+
 .features-h2 {
   font-size: 20px;
   text-align: center;
 }
+
 .faq {
   margin-top: 40px;
 }
@@ -291,21 +286,6 @@ input[type="text"] {
 .faq-question {
   font-weight: bold;
   margin-bottom: 10px;
-}
-
-.floating-demo {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 300px;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-}
-
-.floating-demo video {
-  width: 100%;
-  display: block;
 }
 
 @media (max-width: 768px) {
@@ -323,15 +303,11 @@ input[type="text"] {
   .use-case {
     flex-basis: 100%;
   }
-
-  .floating-demo {
-    display: none;
-  }
 }
 
 .thanks-message {
   text-align: center;
-  padding: 60px 0; /* Adjust padding as needed */
+  padding: 60px 0;
 }
 
 .thanks-message h2 {
@@ -343,52 +319,6 @@ input[type="text"] {
   margin-top: 30px;
 }
 
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 110;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content {
-  /* background-color: #1a2a6c; */
-  margin: 5% auto;
-  padding: 30px;
-  border-radius: 10px;
-  width: 80%;
-  max-width: 800px;
-  position: relative;
-}
-
-.close-button {
-  color: #fff;
-  position: fixed;
-  top: 10px;
-  right: 20px;
-  font-size: 28px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-
-.close-button:hover,
-.close-button:focus {
-  color: #ff9966;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.modal-content video {
-  width: 100%;
-  border-radius: 5px;
-}
-
-/* Pricing Section */
 .pricing {
   padding: 60px 0;
 }
@@ -486,14 +416,12 @@ input[type="text"] {
   }
 }
 
-/* Animations (Examples) */
 .feature:hover {
   transform: translateY(-5px);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3); /* Add a subtle shadow on hover */
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .cta-button {
-  /* Add a more visually appealing hover effect */
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
@@ -502,9 +430,6 @@ input[type="text"] {
   transform: translateY(-2px);
 }
 
-/* You can add more animations as desired */
-
-/* Footer */
 footer {
   background: linear-gradient(135deg, #1a2a6c, #4e54c8);
   color: #fff;
@@ -591,4 +516,28 @@ footer {
 .plan,
 .faq-item {
   will-change: transform, opacity;
+}
+
+.video-demo {
+  padding: 60px 0;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.video-container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.video-container video {
+  width: 100%;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .video-demo {
+    padding: 40px 0;
+  }
 }

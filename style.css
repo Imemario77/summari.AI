@@ -517,13 +517,13 @@ footer {
 .faq-item {
   will-change: transform, opacity;
 }
-
 .video-demo {
-  padding: 60px 0;
+  padding: 40px 0;
   background: rgba(255, 255, 255, 0.1);
 }
 
 .video-container {
+  position: relative;
   max-width: 800px;
   margin: 0 auto;
   border-radius: 10px;
@@ -531,13 +531,73 @@ footer {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
 
-.video-container video {
+.video-thumbnail {
+  width: 100%;
+  display: block;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.8);
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.play-button:hover {
+  background: rgba(255, 255, 255, 1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  max-width: 800px;
+}
+
+.close-button {
+  color: #fff;
+  position: absolute;
+  top: -40px;
+  right: 0;
+  font-size: 28px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-content video {
   width: 100%;
   display: block;
 }
 
 @media (max-width: 768px) {
   .video-demo {
-    padding: 40px 0;
+    padding: 30px 0;
+  }
+
+  .play-button {
+    font-size: 18px;
+    width: 50px;
+    height: 50px;
   }
 }

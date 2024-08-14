@@ -178,39 +178,41 @@
             <h3>Free</h3>
             <p class="price">$0<span>/month</span></p>
             <ul>
-              <li>2 webpage analysis per day</li>
-              <li>1 YouTube video analysis per day</li>
-              <li>20 total queries per day</li>
-              <li>Simple Q&A and summarization</li>
+              <li>Basic summarization of web pages, YouTube videos</li>
+              <li>10 queries per day</li>
             </ul>
-            <a href="#early-access" class="cta-button">Get Started</a>
-          </div>
-          <div class="plan featured">
-            <h3>Pro</h3>
-            <p class="price">$19.99<span>/month</span></p>
-            <ul>
-              <li>Unlimited webpage analyses</li>
-              <li>Unlimited YouTube video analyses</li>
-              <li>Unlimited queries</li>
-              <li>Unlimited chat histories export to MS document</li>
-              <li>All basic plan features</li>
-              <li>Priority support</li>
-            </ul>
-            <a href="#early-access" class="cta-button">Upgrade to Pro</a>
+            <a href="#early-access" class="cta-button isolate">Get Started</a>
           </div>
           <div class="plan">
             <h3>Basic</h3>
-            <p class="price">$9.99<span>/month</span></p>
+            <p class="price">
+              $9.99<span>/month <br />or</span> <br />
+              $99.99<span>/year</span>
+            </p>
             <ul>
-              <li>10 webpage analyses per day</li>
-              <li>10 YouTube video analyses per day</li>
-              <li>100 total queries per day</li>
-              <li>1 chat histories export to MS document</li>
-              <li>Better context retention, comparative analysis</li>
-              <li>All free plan features</li>
-              <li>Email support</li>
+              <li>All Free tier features</li>
+              <li>150 queries per day</li>
+              <li>Integration with one productivity tool</li>
+              <li>Basic sentiment analysis and keyword extraction</li>
             </ul>
-            <a href="#early-access" class="cta-button">Choose Basic</a>
+            <a href="#early-access" class="cta-button isolate">Choose Basic</a>
+          </div>
+          <div class="plan featured">
+            <h3>Pro</h3>
+            <p class="price">
+              $15.99<span>/month <br />or</span> <br />$189.99<span>/year</span>
+            </p>
+            <ul>
+              <li>All Basic tier features</li>
+              <li>Unlimited queries</li>
+              <li>Integration with Notion, Evernote, and Google Docs</li>
+              <li>Advanced sentiment analysis and keyword extraction</li>
+              <li>Customizable summary style and length</li>
+              <li>Premium support</li>
+            </ul>
+            <a href="#early-access" class="cta-button isolate"
+              >Upgrade to Pro</a
+            >
           </div>
         </div>
       </section>
@@ -235,7 +237,9 @@
             autocomplete
             required
           />
-          <button type="submit" class="cta-button">Get Early Access</button>
+          <button type="submit" class="cta-button isolate">
+            Get Early Access
+          </button>
         </form>
       </section>
 
@@ -359,7 +363,7 @@
                 "Thanks for your interest! We'll notify you when we launch."
               );
               this.reset(); // Clear the form
-              window.location = "thanks.html";
+              window.location = "/thanks";
             } else {
               // Handle error (e.g., display an error message)
               alert("An error occurred. Please try again later.");
